@@ -2,4 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background: #151d2f;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #13fc97;
+  color: #151d2f;
+  border-radius: 0.5em;
+  font-weight: 500;
+}
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  width: 100%;
+  min-width: 50em;
+  margin: 1em auto;
+  padding: 0.5em;
+}
+.search-container input {
+  padding: 1em;
+  border-radius: 0.5em;
+  font-weight: 400;
+}
+/* .wrapper {
+} */
+.loader {
+  display: none;
+  height: 15em;
+  width: 15em;
+  border: 3.5em solid #2b304d;
+  border-top: 3.5em solid #13fc97;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  animation: spin 3s infinite;
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
