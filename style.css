@@ -7,31 +7,37 @@
 body {
   background: #151d2f;
 }
-button {
+
+#submit-btn {
   border: none;
   outline: none;
+  width: 20%;
+  width: 200px;
   cursor: pointer;
-  background: #13fc97;
+  background: #13fc97 !important;
   color: #151d2f;
   border-radius: 0.5em;
   font-weight: 500;
 }
 .search-container {
-  display: grid;
-  grid-template-columns: 9fr 3fr;
+  width: 100% !important;
+  display: flex;
+  grid-template-columns: 8fr 3fr;
   gap: 1em;
   width: 100%;
-  min-width: 50em;
-  margin: 1em auto;
+  /* min-width: 50em; */
+  margin: auto;
   padding: 0.5em;
 }
+
 .search-container input {
   padding: 1em;
   border-radius: 0.5em;
   font-weight: 400;
+
+  width: 80% !important;
 }
-/* .wrapper {
-} */
+
 .loader {
   display: none;
   height: 15em;
@@ -48,5 +54,24 @@ button {
 @keyframes spin {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+img + button {
+  width: 100%;
+  border-radius: 5% !important;
+  background: #13fc97 !important;
+}
+img:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+@media (max-width: 425px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
   }
 }
